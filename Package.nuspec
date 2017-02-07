@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata minClientVersion="2.8.1">
+    <id>Nemesis.Forms</id>
+    <version>1.0.3</version>
+    <title>Nemesis.Forms</title>
+    <authors>Mirche Toshevski</authors>
+    <owners>Mirche Toshevski</owners>
+    <projectUrl>https://github.com/neemesis/Nemesis.Forms</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>2016 Mirche Toshevski</copyright>
+    <iconUrl>https://raw.githubusercontent.com/rdavisau/Nemesis-for-pcl/master/_meta/icon/icon.png</iconUrl>
+    <releaseNotes>
+
+    </releaseNotes>
+    <description>
+      Nemesis Forms
+    </description>
+    <summary>.</summary>
+    <tags>xamarin, checkbox, forms</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+
+    <!--Core-->
+    <file src="Nemesis\Nemesis\bin\Release\Nemesis.dll"
+          target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Nemesis.dll" />
+    <file src="Nemesis\Nemesis\bin\Release\Nemesis.pdb"
+          target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Nemesis.pdb" />
+    
+    <!--Xamarin.Android-->
+    <file src="Nemesis\Nemesis.Droid\bin\Release\Nemesis.Droid.dll"
+          target="lib\MonoAndroid10\Nemesis.Droid.dll" />
+    <file src="Nemesis\Nemesis.Droid\bin\Release\Nemesis.Droid.pdb"
+          target="lib\MonoAndroid10\Nemesis.Droid.pdb" />
+    <file src="Nemesis\Nemesis.Droid\bin\Release\Nemesis.dll"
+          target="lib\MonoAndroid10\Nemesis.dll" />
+    <file src="Nemesis\Nemesis.Droid\bin\Release\Nemesis.pdb"
+          target="lib\MonoAndroid10\Nemesis.pdb" />
+
+    <!--Windows Desktop-->
+    <file src="Nemesis\Nemesis.UWP\bin\x86\Release\ilc\Nemesis.UWP.dll"
+          target="lib\net45\Nemesis.UWP.dll" />
+    <file src="Nemesis\Nemesis.UWP\bin\x86\Release\Nemesis.dll"
+          target="lib\net45\Nemesis.dll" />
+    <file src="Nemesis\Nemesis.UWP\bin\x86\Release\Nemesis.pdb"
+          target="lib\net45\Nemesis.pdb" />
+    <file src="Nemesis\Nemesis.UWP\bin\x86\Release\Nemesis.UWP.pdb"
+          target="lib\net45\Nemesis.UWP.pdb" />
+
+  </files>
+</package>
