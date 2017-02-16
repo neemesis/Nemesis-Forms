@@ -99,6 +99,7 @@
     <Compile Include="NCheckBoxRenderer.cs" />
     <Compile Include="ExtendedButtonRenderer.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="NSuggestionBoxRenderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
