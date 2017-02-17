@@ -8,8 +8,8 @@
         <Label Text="Welcome to Xamarin Forms!"
            HorizontalOptions="Center" />
 
-        <local:NCheckBox TextChecked="ab" TextUnchecked="ba"/>
-        <local:NSuggestionBox x:Name="nsbTest"/>
+        <local:NCheckBox TextChecked="ab" TextUnchecked="ba" CheckedChanged="NCheckBox_OnCheckedChanged"/>
+        <local:NSuggestionBox x:Name="nsbTest" SelectedTextChanged="NsbTest_OnSelectedTextChanged"/>
 
     </StackLayout>
   

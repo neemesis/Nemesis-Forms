@@ -28,11 +28,6 @@ namespace Nemesis {
 
         public event EventHandler<EventArgs> TextChanged;
 
-        private static void OnTextChanged(BindableObject bindable, object oldvalue, object newvalue) {
-            var suggestionBox = (NSuggestionBox)bindable;
-            suggestionBox.Text = (string)newvalue;
-        }
-
         /// <summary>
         /// 
         /// </summary>
@@ -43,8 +38,7 @@ namespace Nemesis {
                 returnType: typeof(ObservableCollection<string>),
                 declaringType: typeof(NSuggestionBox),
                 defaultValue: new ObservableCollection<string>(),
-                defaultBindingMode: BindingMode.TwoWay,
-                propertyChanged: OnItemsSourceChanged);
+                defaultBindingMode: BindingMode.TwoWay);
 
         public ObservableCollection<string> ItemsSource {
             get { return (ObservableCollection<string>)GetValue(ItemsSourceProperty); }
@@ -56,11 +50,6 @@ namespace Nemesis {
         }
 
         public event EventHandler<EventArgs> ItemsSourceChanged;
-
-        private static void OnItemsSourceChanged(BindableObject bindable, object oldvalue, object newvalue) {
-            var suggestionBox = (NSuggestionBox)bindable;
-            suggestionBox.ItemsSource = (ObservableCollection<string>) newvalue;
-        }
 
         /// <summary>
         /// 
@@ -79,15 +68,10 @@ namespace Nemesis {
                 Debug.WriteLine("SetSelectedText: " + value);
                 SetValue(SelectedTextProperty, value);
                 if (SelectedTextProperty != null)
-                    SelectedTextChanged?.Invoke(this, new EventArgs());
+                    SelectedTextChanged?.Invoke(this, new NSuggestionBoxEventArgs(value));
             }
         }
 
-        public event EventHandler<EventArgs> SelectedTextChanged;
-
-        private static void OnSelectedTextChanged(BindableObject bindable, object oldvalue, object newvalue) {
-            var suggestionBox = (NSuggestionBox)bindable;
-            suggestionBox.SelectedText = (string)newvalue;
-        }
+        public event EventHandler<NSuggestionBoxEventArgs> SelectedTextChanged;
     }
 }
