@@ -22,7 +22,7 @@ namespace Nemesis {
             set {
                 SetValue(TextProperty, value);
                 if (TextProperty != null)
-                    TextChanged?.Invoke(this, new EventArgs());
+                    TextChanged?.Invoke(this, new NSuggestionBoxEventArgs(value));
             }
         }
 

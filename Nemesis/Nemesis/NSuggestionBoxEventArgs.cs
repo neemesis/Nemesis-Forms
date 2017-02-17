@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Nemesis {
     public class NSuggestionBoxEventArgs : EventArgs {
-        public string SelectedText;
+        public readonly string Text;
 
-        public NSuggestionBoxEventArgs(string SelectedText) {
-            this.SelectedText = SelectedText;
+        public NSuggestionBoxEventArgs(string Text) {
+            this.Text = Text;
         }
 
     }
