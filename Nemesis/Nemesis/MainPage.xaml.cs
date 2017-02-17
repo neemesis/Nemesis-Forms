@@ -20,7 +20,7 @@ namespace Nemesis {
         }
 
         private void NsbTest_OnSelectedTextChanged(object sender, NSuggestionBoxEventArgs e) {
-            Debug.WriteLine("NSB: " + e.SelectedText);
+            Debug.WriteLine("NSB: " + e.Text);
         }
     }
 }
