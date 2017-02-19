@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8.1">
     <id>Nemesis.Forms</id>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <title>Nemesis.Forms</title>
     <authors>Mirche Toshevski</authors>
     <owners>Mirche Toshevski</owners>
